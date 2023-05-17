@@ -8,9 +8,9 @@ public class E1HomeW {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver=new ChromeDriver();
 
+        driver.get("https://parabank.parasoft.com/parabank/register.htm;jsessionid=B8DD31FF0AFEDBDF4454B27BBC5C05B0%22");
         driver.manage().window().maximize();
 
-        driver.get("https://parabank.parasoft.com/parabank/register.htm;jsessionid=B8DD31FF0AFEDBDF4454B27BBC5C05B0%22");
         driver.findElement(By.id("customer.firstName")).sendKeys("Aya");
         driver.findElement(By.id("customer.lastName")).sendKeys("Sai");
         driver.findElement(By.id("customer.address.street")).sendKeys("55th street");
